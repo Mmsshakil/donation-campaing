@@ -1,0 +1,158 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/cQBRxh3/Health.png",
+        "category": "health",
+        "title": "New Healthy Lifestyle Guide",
+        "description": "New description for a healthier life.",
+        "price": 99.99,
+        "color": {
+            "backgroundColor": "#0052ff26",
+            "categoryColor": "#0052ff33",
+            "categoryTitleColor": "#0052FF"
+        }
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/8zHmVBm/Education.png",
+        "category": "education",
+        "title": "New Learn to Code with Python",
+        "description": "New description for mastering Python.",
+        "price": 49.99,
+        "color": {
+            "backgroundColor": "#ff444a26",
+            "categoryColor": "#ff444a33",
+            "categoryTitleColor": "#FF444A"
+        }
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/Qr8p3qY/Clothing.png",
+        "category": "clothing",
+        "title": "New Stylish Denim Jacket",
+        "description": "New description for staying trendy.",
+        "price": 59.99,
+        "color": {
+            "backgroundColor": "#79c23f26",
+            "categoryColor": "#79c23f33",
+            "categoryTitleColor": "#79C23F"
+        }
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/7vxTcj8/Food.png",
+        "category": "food",
+        "title": "New Gourmet Chocolate Truffles",
+        "description": "New description for indulging in truffles.",
+        "price": 29.99,
+        "color": {
+            "backgroundColor": "#f8714726",
+            "categoryColor": "#f8714733",
+            "categoryTitleColor": "#F87147"
+        }
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/cQBRxh3/Health.png",
+        "category": "health",
+        "title": "New Yoga for Beginners",
+        "description": "New description for starting your health journey with yoga.",
+        "price": 79.99,
+        "color": {
+            "backgroundColor": "#0052ff26",
+            "categoryColor": "#0052ff33",
+            "categoryTitleColor": "#0052FF"
+        }
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/8zHmVBm/Education.png",
+        "category": "education",
+        "title": "New Mathematics Workbook",
+        "description": "New description for sharpening math skills.",
+        "price": 19.99,
+        "color": {
+            "backgroundColor": "#ff444a26",
+            "categoryColor": "#ff444a33",
+            "categoryTitleColor": "#FF444A"
+        }
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/Qr8p3qY/Clothing.png",
+        "category": "clothing",
+        "title": "New Designer Sunglasses",
+        "description": "New description for stylish sunglasses.",
+        "price": 69.99,
+        "color": {
+            "backgroundColor": "#79c23f26",
+            "categoryColor": "#79c23f33",
+            "categoryTitleColor": "#79C23F"
+        }
+    },
+    {
+        "id": 8,
+        "img": "https://i.ibb.co/7vxTcj8/Food.png",
+        "category": "food",
+        "title": "New Organic Fruit Basket",
+        "description": "New description for enjoying fresh organic fruits.",
+        "price": 39.99,
+        "color": {
+            "backgroundColor": "#f8714726",
+            "categoryColor": "#f8714733",
+            "categoryTitleColor": "#F87147"
+        }
+    },
+    {
+        "id": 9,
+        "img": "https://i.ibb.co/cQBRxh3/Health.png",
+        "category": "health",
+        "title": "New Meditation Guide",
+        "description": "New description for finding inner peace through meditation.",
+        "price": 49.99,
+        "color": {
+            "backgroundColor": "#0052ff26",
+            "categoryColor": "#0052ff33",
+            "categoryTitleColor": "#0052FF"
+        }
+    },
+    {
+        "id": 10,
+        "img": "https://i.ibb.co/8zHmVBm/Education.png",
+        "category": "education",
+        "title": "New History of Ancient Civilizations",
+        "description": "New description for exploring ancient cultures.",
+        "price": 59.99,
+        "color": {
+            "backgroundColor": "#ff444a26",
+            "categoryColor": "#ff444a33",
+            "categoryTitleColor": "#FF444A"
+        }
+    },
+    {
+        "id": 11,
+        "img": "https://i.ibb.co/Qr8p3qY/Clothing.png",
+        "category": "clothing",
+        "title": "New Cozy Knit Sweater",
+        "description": "New description for staying warm and stylish.",
+        "price": 69.99,
+        "color": {
+            "backgroundColor": "#79c23f26",
+            "categoryColor": "#79c23f33",
+            "categoryTitleColor": "#79C23F"
+        }
+    },
+    {
+        "id": 12,
+        "img": "https://i.ibb.co/7vxTcj8/Food.png",
+        "category": "food",
+        "title": "New Gourmet Coffee Beans",
+        "description": "New description for savoring gourmet coffee flavors.",
+        "price": 19,
+        "color": {
+            "backgroundColor": "#f8714726",
+            "categoryColor": "#f8714733",
+            "categoryTitleColor": "#F87147"
+        }
+    }
+]
