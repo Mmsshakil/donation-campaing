@@ -1,32 +1,36 @@
 
 
-const PhonesCard = ({phone}) => {
+const PhonesCard = ({ phone }) => {
 
     // console.log(phone);
-    const {img,category,title, color} = phone;
+    const { img, category, title, color } = phone;
     // const textColor = color;
-    console.log(color.backgroundColor);
+    const cardBackgroundColor = color.backgroundColor;
+    const textColor = color.categoryTitleColor;
+    const categoryBackground = color.categoryColor;
+    console.log(cardBackgroundColor);
 
     return (
         <div>
-            <div className="relative flex w-64 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-                <div className="relative mx-4  h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white">
+            <div style={{ background: cardBackgroundColor, color: textColor }} className=" flex w-64 flex-col rounded-xl h-72">
+                <div className="mb-5">
                     <img
                         src={img}
                         alt="img-blur-shadow"
-                        
                     />
                 </div>
-                <div className="p-6">
-                  
-                    <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                       {category}
-                    </p>
-                    <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                <div className="p-6" >
+                    <div style={{background:categoryBackground}} className="w-20 text-center rounded-md">
+                        <p className="text-sm font-medium p-2">
+                            {category}
+                        </p>
+                    </div>
+
+                    <h5 className="mb-2 text-base font-bold">
                         {title}
                     </h5>
                 </div>
-            
+
             </div>
         </div>
     );
