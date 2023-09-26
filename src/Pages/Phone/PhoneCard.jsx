@@ -1,3 +1,4 @@
+import swal from "sweetalert";
 
 const PhoneCard = ({ phone }) => {
 
@@ -7,7 +8,40 @@ const PhoneCard = ({ phone }) => {
 
     const handleAddToFavourite = () => {
         console.log(phone);
-    } 
+
+        const addedFavouritesArray = [];
+        // get the string and convert as a object by parse
+        const favouriteItems = JSON.parse(localStorage.getItem('favourites'))
+
+        // console.log(favouriteItems);
+
+        if (!favouriteItems) {
+            addedFavouritesArray.push(phone)
+            localStorage.setItem('favourites', JSON.stringify(addedFavouritesArray));
+            swal("Success!", "Donation Added", "success");
+        }
+        else {
+
+            const isExits = favouriteItems.find(phone => phone.id === id);
+            if (!isExits) {
+                addedFavouritesArray.push(...favouriteItems, phone)
+                localStorage.setItem('favourites', JSON.stringify(addedFavouritesArray));
+                swal("Success!", "Donation Added", "success");
+
+            }
+            else {
+                console.log('already exixts');
+                swal("Faild!", "Already Donated", "error");
+            }
+
+
+        }
+
+        // set the object as string by stringfy
+        // localStorage.setItem("test", JSON.stringify(phone));
+
+
+    }
 
     // console.log(id);
 
