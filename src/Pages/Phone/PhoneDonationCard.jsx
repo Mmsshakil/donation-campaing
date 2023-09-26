@@ -1,10 +1,11 @@
+import PhoneCard from "./PhoneCard";
 
 
 const PhoneDonationCard = ({ phone }) => {
 
     const { id, img, category, title, description, color, price } = phone;
 
-    console.log(phone);
+    // console.log(phone);
     return (
 
 
