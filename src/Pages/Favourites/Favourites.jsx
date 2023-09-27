@@ -19,7 +19,7 @@ const Favourites = () => {
     }, [])
 
     // console.log(favourites);
-    console.log(isShow);
+    // console.log(isShow);
 
     return <div>
         {
@@ -30,9 +30,9 @@ const Favourites = () => {
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10 mx-2 lg:mx-0 mb-10">
                         {
-                            isShow ? favourites.map(phone => <PhoneDonationCard key={phone.id} phone={phone} ></PhoneDonationCard>)
+                            isShow ? favourites.length && favourites?.map(phone => <PhoneDonationCard key={phone.id} phone={phone} ></PhoneDonationCard>)
                                 :
-                                favourites.slice(0, 4).map(phone => <PhoneDonationCard key={phone.id} phone={phone} ></PhoneDonationCard>)
+                                favourites.length && favourites?.slice(0, 4).map(phone => <PhoneDonationCard key={phone.id} phone={phone} ></PhoneDonationCard>)
                         }
                     </div>
 

@@ -11,7 +11,7 @@ const Phone = () => {
 
     useEffect(() => {
 
-        const findPhone = phones?.find((phone) => phone.id == id);
+        const findPhone = phones.length && phones?.find((phone) => phone.id == id);
 
         setPhone(findPhone);
     }, [id, phones])
