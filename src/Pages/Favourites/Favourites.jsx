@@ -28,7 +28,7 @@ const Favourites = () => {
 
                 <div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10 mx-2 lg:mx-0">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10 mx-2 lg:mx-0 mb-10">
                         {
                             isShow ? favourites.map(phone => <PhoneDonationCard key={phone.id} phone={phone} ></PhoneDonationCard>)
                                 :
@@ -38,8 +38,8 @@ const Favourites = () => {
 
                     {!isShow && (
                         <button
-                            onClick={() => setIsShow(true)} // Set isShow to true to show all items
-                            className="font-semibold text-center bg-green-800 text-white p-3 rounded-md mx-auto block"
+                            onClick={() => setIsShow(true)}
+                            className="font-semibold text-center bg-green-800 text-white p-3 rounded-md mx-auto block mb-10"
                         >
                             See More
                         </button>
