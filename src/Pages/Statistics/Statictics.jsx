@@ -2,8 +2,15 @@ import React from 'react';
 import { PieChart, Pie, ResponsiveContainer, Cell } from 'recharts';
 
 const localDonations = localStorage.getItem('favourites');
-const donationSize = localDonations ? JSON.parse(localDonations).length : 0; // Check if localDonations is defined
-console.log(donationSize);
+const donationSize = localDonations ? JSON.parse(localDonations).length : 0;
+// console.log(donationSize);
+
+
+// -------------------------------------
+
+
+
+// -------------------------------------
 
 const data = [
     { name: 'Total', value: 12 },
@@ -14,6 +21,9 @@ const COLORS = ['#0088FE', '#00C49F'];
 
 const Statistics = () => {
     const totalValue = data.reduce((total, entry) => total + entry.value, 0);
+    // const totalValue = 12 ;
+
+    console.log(totalValue);
 
     return (
         <div className="statistics-container flex flex-col lg:flex-row justify-center items-center mb-3">
@@ -38,7 +48,7 @@ const Statistics = () => {
                 {data.map((entry, index) => (
                     <div key={`legend-${index}`} className="legend-item">
                         <div className="legend-color" style={{ backgroundColor: COLORS[index % COLORS.length] }}></div>
-                        <div className="legend-label legend-color font-bold text-xl" style={{ color: COLORS[index % COLORS.length] }}>{`${entry.name}: ${(entry.value / totalValue * 100).toFixed(0)}%`}</div>
+                        <div className="legend-label legend-color font-bold text-xl" style={{ color: COLORS[index % COLORS.length] }}>{`${entry.name}: ${((entry.value * 100) / totalValue).toFixed(0)}%`}</div>
                     </div>
                 ))}
             </div>
