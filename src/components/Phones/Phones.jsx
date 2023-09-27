@@ -9,8 +9,8 @@ const Phones = ({phones}) => {
     
     return (
         <div>
-            <h2>All cards</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-center gap-5">
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-5">
                 {
                     phones.length && phones?.map(phone => <PhonesCard key={phone.id} phone={phone}></PhonesCard>)
                 }

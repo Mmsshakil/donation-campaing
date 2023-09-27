@@ -13,7 +13,7 @@ const PhonesCard = ({ phone }) => {
 
     return (
 
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-10">
             <Link to={`/phones/${id}`}>
                 <div style={{ background: cardBackgroundColor, color: textColor }} className=" flex w-72 flex-col rounded-xl h-80">
                     <div className="mb-5">

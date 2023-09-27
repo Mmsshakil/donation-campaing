@@ -2,7 +2,7 @@ import React from 'react';
 import { PieChart, Pie, ResponsiveContainer, Cell } from 'recharts';
 
 const localDonations = localStorage.getItem('favourites');
-const donationSize = JSON.parse(localDonations).length;
+const donationSize = localDonations ? JSON.parse(localDonations).length : 0; // Check if localDonations is defined
 console.log(donationSize);
 
 const data = [
@@ -16,7 +16,7 @@ const Statistics = () => {
     const totalValue = data.reduce((total, entry) => total + entry.value, 0);
 
     return (
-        <div className="statistics-container flex flex-col lg:flex-row justify-center items-center">
+        <div className="statistics-container flex flex-col lg:flex-row justify-center items-center mb-3">
             <ResponsiveContainer width={400} height={400}>
                 <PieChart>
                     <Pie
@@ -38,7 +38,7 @@ const Statistics = () => {
                 {data.map((entry, index) => (
                     <div key={`legend-${index}`} className="legend-item">
                         <div className="legend-color" style={{ backgroundColor: COLORS[index % COLORS.length] }}></div>
-                        <div className="legend-label legend-color font-bold text-xl" style={{color: COLORS[index % COLORS.length]}}>{`${entry.name}: ${(entry.value / totalValue * 100).toFixed(0)}%`}</div>
+                        <div className="legend-label legend-color font-bold text-xl" style={{ color: COLORS[index % COLORS.length] }}>{`${entry.name}: ${(entry.value / totalValue * 100).toFixed(0)}%`}</div>
                     </div>
                 ))}
             </div>

@@ -6,12 +6,14 @@ import Favourites from "../Pages/Favourites/Favourites";
 import Phone from "../Pages/Phone/Phone";
 
 import Statistics from "../Pages/Statistics/Statictics";
+import Error from "../Pages/Error/Error";
 
 
 const myCreatedRoute = createBrowserRouter([
     {
         path: '/',
         element: <MainLayout></MainLayout>,
+        errorElement: <Error></Error>,
         children: [
             {
                 path: '/',
