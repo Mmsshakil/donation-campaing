@@ -4,3 +4,6 @@
 2. Users can visualize the percentage of donations using a pie chart.
 3. It facilitates easy categorization of donations.
 4. Donation categories are easily distinguishable by color.
+
+# Live Link
+https://donetion-assingment-react-rout.vercel.app
